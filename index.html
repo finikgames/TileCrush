@@ -17,7 +17,7 @@
   <script src="Build/VK.loader.js"></script>
   <script>
     const settings = {
-      dataUrl: "Build/2455794ed3942603d68bc32d983f8a80.data.unityweb",
+      dataUrl: "Build/01f3e80235f4173f8e26d25cce487d53.data.unityweb",
       frameworkUrl: "Build/c94a53e9b1884c4d9e40ed97dc746013.js.unityweb",
       codeUrl: "Build/84d4c47abc2676e267a8b0f549aec63c.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
@@ -40,6 +40,9 @@
       });
     }, 500); // Wait half a second before loading. Makes page more responsive on reload.
   </script>
+
+  <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+  <script> vkBridge.send('VKWebAppInit'); </script>
 </body>
 
 </html>
